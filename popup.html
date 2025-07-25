@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>YouTube History Cleaner</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h2>YouTube History Cleaner</h2>
+
+  <div>
+    <label>Delete history by channel:</label><br>
+    <input type="text" id="channelInput" placeholder="Enter channel name or URL">
+    <button id="deleteByChannel">Delete</button>
+  </div>
+
+  <div>
+    <label>Search history by keyword:</label><br>
+    <input type="text" id="keywordInput" placeholder="Enter keyword">
+    <button id="searchKeyword">Search</button>
+    <ul id="resultList"></ul>
+    <button id="deleteSelected">Delete Selected</button>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

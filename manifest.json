@@ -1,0 +1,23 @@
+{
+  "manifest_version": 3,
+  "name": "YouTube History Cleaner",
+  "description": "Delete YouTube watch history by channel or keyword.",
+  "version": "1.0",
+  "permissions": [
+    "history",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://www.youtube.com/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "128": "icons/icon128.png"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  }
+}
